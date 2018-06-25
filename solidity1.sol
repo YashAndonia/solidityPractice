@@ -1,33 +1,35 @@
-//this is a little -practice- of both git and sol haha
+pragma solidity^0.4.0;
 
-pragma solidity ^0.4.0;
+contract dataTypes{
+    string abc;
+    
+    
+    
+    //this is a Floating point number!
 
-contract MyFirstContract{
-string private name;
-uint private age;
 
-
-function setName(string newName){
-name=newName;
-
-}
-
-function getName() returns (string){
-    return name;
-}    
+//this will operate
+//on the enum
 
 
 
-function setAge(uint newAge){
-age= newAge;
+address myAdress;
 
-}
-
-function getName() returns (uint){
-    return age;
-}    
-
-
-
+function assignAdress(){
+    myAdress=msg.sender;
+    myAdress.balance;
+    myAdress.transfer(9);
     
 }
+
+uint[] arr=[1,2,3];
+function arrfunc(){
+arr.push(10);
+arr.length;
+arr[0];
+    
+}
+
+
+}
+
