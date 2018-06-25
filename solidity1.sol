@@ -1,3 +1,5 @@
+//this is a little -practice- of both git and sol haha
+
 pragma solidity ^0.4.0;
 
 contract MyFirstContract{
