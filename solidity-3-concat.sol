@@ -44,7 +44,8 @@ contract TestString{
     
     using Strings for string;
     
-    function test(string x)constant returns (string){
+    function test(string x)constant returns (string){//the constant keyword ensures the blockchain that there is not cgoing to be any change to the contract after operation o fthe function, basically no actual transaction of etheres is occuring, to cause any problems
+    
         
         return x.concat("hello");//as per property of library, the object calling this methd(in this case, the string itself) wil lautomatically become the first guy in the function concwat(x,y);
         //so here, itll be concat(x,hello);
